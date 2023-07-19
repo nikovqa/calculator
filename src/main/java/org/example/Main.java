@@ -17,11 +17,11 @@ import java.util.Scanner;
                 throw new IllegalArgumentException("Invalid input: На ввод принимается два целых числа меньше или равные 10 и один оператор (+, -, /, *) разделенные пробелом\nПРИМЕР: 10 + 10");
             }
             int a = Integer.parseInt(data[0]);
-            if (0 < a || a > 10) {
+            if (a < 1 || a > 10) {
                 throw new IllegalArgumentException("Invalid input: Числа должны быть меньше или равны 10");
             }
             int b = Integer.parseInt(data[2]);
-            if (0 < b || b > 10) {
+            if (b < 1 || b > 10) {
                 throw new IllegalArgumentException("Invalid input: Числа должны быть меньше или равны 10");
             }
             int result;
